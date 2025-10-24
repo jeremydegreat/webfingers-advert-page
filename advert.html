@@ -17,10 +17,10 @@
     <meta name="revisit-after" content="7 days">
 
     <!-- Favicon and other Links -->
-    <link rel="icon" type="image/x-icon" href="/public/assets/images/favicon.ico">
-    <link rel="stylesheet" href="advert.css">
+    <link rel="icon" type="image/png" href="images/myFavicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/webfingerad.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <script src="scripts/advert.js" defer></script>
 </head>
 <body>
@@ -30,253 +30,261 @@
             <a href="#">
                 <img src="images/logo_white.png" alt="Webfingersltd logo_white">
             </a>
+            <span>Webfingers</span>
         </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Navigation -->
-        <nav class="nav-links">
+        <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#enquiry">Enquiry</a>
             <a href="#contact">Contact</a>
         </nav>
+
         <!-- Getting Started -->
         <div class="cta-button">
-            <a href="#contact">Get Started</a>
+            <a href="#enquiry">Get Started</a>
         </div>
     </header>
+
     <main class="main-container">
 
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section  id="home" class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1>Transform Your Business with <span>Digital Innovation</span></h1>
+                    <h1>Transform <span>Your Business</span> with <span>Digital Innovation</span></h1>
                     <p>We provide cutting-edge digital products designed specifically for startups and established companies looking to scale efficiently and stay ahead of the competition.</p>
-                    <a href="#contact" class="cta-button">Explore Our Solutions</a>
-                </div>
-                <div class="hero-image">
-                    <img src="https://placehold.co/600x400/4f46e5/ffffff?text=WebFingers+Innovation" alt="Digital Innovation" class="hero-image">
+                    <a href="#contact">Let's Build Your Idea</a>
+                    <div id="enquiry" class="enquiry-form-container">
+                        <h2>Quick Enquiry</h2>
+                        <form action="#" method="post" class="enquiryForm">
+                            <div class="form-group">
+                                <input type="text" name="fullname" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="contact" placeholder="Contact Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="datetime-local" name="schedule" required>
+                            </div>
+                            <button type="submit" class="form-btn">Send Enquiry</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Products Section -->
-        <section id="products" class="products">
-            <div class="product-container">
-                <div class="product-header">
-                    <h2>Our Digital Products</h2>
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <div class="history">
+                    <p>Founded in 2022, Webfingers Limited began as a small team of passionate developers and designers with a vision to transform how businesses approach digital technology. What started as a web development agency has evolved into a comprehensive IT consulting firm that serves clients across Nigeria and beyond. Our journey has been marked by continuous innovation, learning, and adaptation to emerging technologies. We've grown from a startup to a trusted partner for businesses seeking digital transformation, helping them navigate the complex landscape of modern technology. Today, we're proud to be at the forefront of digital innovation, offering cutting-edge solutions that drive business growth and success in the digital age.</p>
+                </div>
+                <div class="why-choose-us">
+                    <h3>Why Choose Webfingers?</h3>
+                    <ol>
+                        <li><strong>Expert Team:</strong> Certified professionals with years of industry experience</li>
+                        <li><strong>Innovation Focus:</strong> Cutting-edge solutions using latest technologies</li>
+                        <li><strong>Client Success:</strong> Proven track record of delivering results</li>
+                        <li><strong>24/7 Support:</strong> Round-the-clock technical support and maintenance</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="service-container">
+                <div class="service-header">
+                    <h2>Our Digital Services</h2>
                     <p>Comprehensive solutions tailored for startups and established businesses to drive growth, efficiency, and innovation.</p>
                 </div>
-                <div class="products-grid">
-                    <div class="product-card">
-                        <div class="product-icon">📊</div>
-                        <h3>AI-Powered Analytics Dashboard</h3>
-                        <p>Real-time business intelligence with machine learning insights to optimize your operations and decision-making.</p>
-                        <a href="#contact" class="product-link">Learn more →</a>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">code</span>
+                        <h3>Web Development</h3>
+                        <p><p>We design and develop responsive, high-performing websites that offer seamless user experiences and drive engagement. From corporate websites to e-commerce platforms and custom web applications, we build scalable and secure solutions using modern technologies tailored to your business goals.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-icon">🤖</div>
-                        <h3>Automated Customer Support AI</h3>
-                        <p>24/7 intelligent chatbots that reduce support costs by 60% while improving customer satisfaction scores.</p>
-                        <a href="#contact" class="product-link">Learn more →</a>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">phone_iphone</span>
+                        <h3>Mobile App Development</h3>
+                        <p>We design and build responsive, high-performing mobile applications that deliver seamless user experiences. Whether Android, iOS, or cross-platform, we bring your ideas to life with modern frameworks and scalable solutions.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
                     </div>
-                        <div class="product-card">
-                        <div class="product-icon">☁️</div>
-                        <h3>Scalable Cloud Infrastructure</h3>
-                        <p>Seamlessly scale your applications with our optimized cloud solutions built for high availability and performance.</p>
-                        <a href="#contact" class="product-link">Learn more →</a>
+                        <div class="service-card">
+                        <span class="material-symbols-outlined">analytics</span>
+                        <h3>Research/Business Development</h3>
+                        <p>We help you identify market opportunities, analyze competitors, and design growth-driven strategies tailored to your business goals. From idea validation to expanding your market reach, we provide insights that drive informed decisions and long-term success.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-icon">🚀</div>
-                        <h3>Digital Transformation Platform</h3>
-                        <p>End-to-end solution to modernize legacy systems and implement digital workflows across your organization.</p>
-                        <a href="#contact" class="product-link">Learn more →</a>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">support_agent</span>
+                        <h3>IT Consultancy</h3>
+                        <p>We provide expert IT consultancy services to help businesses leverage technology effectively. From system integration to digital transformation strategies, we guide you in making informed decisions that drive growth and innovation.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">design_services</span>
+                        <h3>UI/UX Design</h3>
+                        <p>We design intuitive and visually appealing user interfaces that enhance customer satisfaction and engagement. By combining user research, wireframing, prototyping, and usability testing, we create seamless digital experiences that are not only beautiful but also functional and user-centered.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">broadcast_on_home</span>
+                        <h3>Broadcasting Engineering</h3>
+                        <p>We offer professional broadcasting engineering solutions that ensure smooth audio and video transmission across digital and traditional platforms. From studio setup and signal processing to live streaming support and equipment optimization, we provide reliable end-to-end services for media houses, broadcasters, and content creators.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
+                    </div>
+                     <div class="service-card">
+                        <span class="material-symbols-outlined">cloud_sync</span>
+                        <h3>Cloud Services</h3>
+                        <p>We provide secure, scalable, and cost-efficient cloud solutions that empower your business to operate with flexibility and resilience. From cloud migration and data storage to infrastructure management and backup solutions, our team ensures seamless deployment and optimal performance across top platforms like AWS, Azure, and Google Cloud.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined">brush</span>
+                        <h3>Graphics design</h3>
+                        <p>We create visually compelling and brand-focused graphic designs that communicate your message with clarity and impact. From logos, banners, and social media creatives to full corporate branding materials, our innovative designs help your business stand out, engage your audience, and build a lasting impression.</p>
+                        <a href="#contact" class="service-link">Learn more →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Trusted by Leading Companies</h2>
-                    <p>
-                        Hear from businesses that have transformed their operations with our
-                        digital solutions.
+        <!-- Portfolio Section -->
+        <section class="fade-in-section" id="portfolio">
+            <div class="section-center">
+                <h2 class="section-heading">Showcase</h2>
+                <p class="section-title">Our Portfolio Highlights</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <img alt="Website project mockup" src="images/Aldoplug.png"/>
+                        <div class="portfolio-overlay">
+                            <h3>Project Alpha</h3>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img alt="Mobile App project mockup" src="images/CabMe.png"/>
+                        <div class="portfolio-overlay">
+                            <h3>Project Beta</h3>
+                            <p>Mobile App Development</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img alt="Financial Mobile App project mockup" src="images/Kachiplug.png"/>
+                        <div class="portfolio-overlay">
+                            <h3>Project Gamma</h3>
+                            <p>Exchange Mobile App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Contact & CTA Section -->
+        <section id="contact" class="contact-section fade-in-section">
+            <div class="contact-container">
+
+                <!-- CTA Content -->
+                <div class="cta-content">
+                    <h2 class="section-heading">Ready to Transform Your Business?</h2>
+                    <p class="section-title">Join hundreds of companies leveraging our digital expertise for growth and efficiency.</p>
+                    <p class="section-text">
+                        Whether you're ready to launch a new project or scale an existing one, we’re here to help. 
+                        Book a free strategy call or send us a message to get started.
                     </p>
+                    <button class="btn btn-primary">
+                        <span class="truncate">Book a Free Strategy Call</span>
+                    </button>
                 </div>
 
-                <!-- Testimonials Grid -->
-                <div class="testimonials-grid">
-                
-                    <!-- Testimonial Card 1 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        Our revenue increased by 240% in just 6 months after implementing their
-                        analytics dashboard. Game-changer!
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=SC"
-                                alt="Sarah Chen"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>Sarah Chen</h4>
-                                <p>CEO, TechNova Startup</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        The automated support system reduced our customer service costs by 70%
-                        while maintaining high satisfaction ratings. Worth every penny.
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=JM"
-                                alt="James Miller"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>James Miller</h4>
-                                <p>CTO, Global Retail Corp</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        We were struggling with outdated infrastructure. Their cloud solution
-                        allowed us to scale seamlessly during our peak season.
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=AL"
-                                alt="Alicia Lopez"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>Alicia Lopez</h4>
-                                <p>COO, FinTech Innovations</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 4 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        The automated support system reduced our customer service costs by 70%
-                        while maintaining high satisfaction ratings. Worth every penny.
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=JM"
-                                alt="James Miller"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>James Miller</h4>
-                                <p>CTO, Global Retail Corp</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 5 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        The automated support system reduced our customer service costs by 70%
-                        while maintaining high satisfaction ratings. Worth every penny.
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=JM"
-                                alt="James Miller"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>James Miller</h4>
-                                <p>CTO, Global Retail Corp</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 6 -->
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">
-                        The automated support system reduced our customer service costs by 70%
-                        while maintaining high satisfaction ratings. Worth every penny.
-                        </p>
-                        <div class="testimonial-author">
-                            <img
-                                src="https://placehold.co/100x100/f5f3ff/4f46e5?text=JM"
-                                alt="James Miller"
-                                class="author-avatar"
-                            />
-                            <div class="author-info">
-                                <h4>James Miller</h4>
-                                <p>CTO, Global Retail Corp</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <input class="form-input" type="text" placeholder="Your Name" required />
+                    <input class="form-input" type="email" placeholder="Your Email" required />
+                    <select class="form-select" required>
+                        <option selected disabled>Select Project Type</option>
+                        <option>Web Development</option>
+                        <option>Mobile App Development</option>
+                        <option>Cloud Services</option>
+                        <option>Research/Business Development</option>
+                    </select>
+                    <textarea class="form-textarea" rows="4" placeholder="Your Message" required></textarea>
+                    <button class="btn btn-primary" type="submit">
+                        <span class="truncate">Send Message</span>
+                    </button>
+                </form>
             </div>
         </section>
-
-        <!-- CTA Section -->
-        <section id="contact" class="cta-section">
-            <div class="container">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Join hundreds of companies that have leveraged our digital products to achieve unprecedented growth and efficiency.</p>
-                <a href="#contact" class="cta-button-white">Schedule a Free Consultation</a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-column">
-                        <h3>DigitalSolutions</h3>
-                        <p style="color: #9ca3af;">Empowering businesses with innovative digital products since 2020.</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Products</h3>
-                        <ul>
-                            <li><a href="#">Analytics Dashboard</a></li>
-                            <li><a href="#">AI Support System</a></li>
-                            <li><a href="#">Cloud Infrastructure</a></li>
-                            <li><a href="#">Digital Transformation</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Connect</h3>
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">YouTube</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copyright">
-                    &copy; 2023 DigitalSolutions. All rights reserved.
-                </div>
-            </div>
-        </footer>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Webfingersltd</h3>
+                    <p style="color: #9ca3af;">Empowering businesses with innovative digital products since 2020.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile development</a></li>
+                        <li><a href="#">Cloud Infrastructure</a></li>
+                        <li><a href="#">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Webfingersltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Action Button (WhatsApp button) -->
+    <a href="https://wa.me/2348083389340?text=Hello,%20I%20am%20interested%20in%20your%20services."
+    target="_blank"
+    class="whatsapp-fab">
+        <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.587-1.528l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.451-4.437-9.887-9.888-9.888-5.451 0-9.887 4.436-9.888 9.888 0 2.044.594 4.025 1.705 5.735l.233.368-1.125 4.105 4.216-1.105.341.205z"></path>
+        </svg>
+    </a>
+
 </body>
 </html>
